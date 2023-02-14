@@ -1,0 +1,31 @@
+.container {
+    width: 200px;
+    height: 600px;
+    background-color: #c3c3c3;
+    overflow: auto;
+
+  }
+  .flix-container {
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    padding: 0;
+    
+  } 
+  a{
+    text-decoration:none;
+    color:white;
+    text-align: center;
+  } 
+  li{
+   
+    background-color: black;
+    border-bottom: solid white ;
+    padding: 5px;
+    justify-content: center;
+  }
+  
+img{
+    
+    width:200px ;
+}
+  

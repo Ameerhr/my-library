@@ -1,0 +1,16 @@
+.boss{
+    display: flex;
+    
+    
+    
+    
+}
+.router{
+    padding: 10px;
+    margin: 0;
+    overflow: auto;
+    
+}
+body{
+    overflow: auto; 
+}

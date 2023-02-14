@@ -1,0 +1,9 @@
+<div class="sitting">
+<input type="checkbox" (change)="dark($event)">
+
+<form #form="ngForm" (ngSubmit)="addName(form)">
+    <input id="addAdmin"  type="text" name="name" [(ngModel)]="nameInput" required>
+    <button (click)="openSuccess()" type="submit">Add Name</button>
+  </form>
+
+</div>

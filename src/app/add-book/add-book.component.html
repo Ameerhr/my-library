@@ -1,0 +1,30 @@
+<form class="container-form" (ngSubmit)="onSubmit(formDetails)" #formDetails="ngForm">
+
+<li>Enter book name</li> 
+<input type="text" placeholder="Book Name " ngModel name="name" required #name="ngModel" />
+<p class="name-validation-msg" *ngIf="name.invalid&& name.touched" [ngStyle]="{'color':'red'}">Name Cannot be empty </p>
+
+<li>Enter book Aouthor</li> 
+<input type="text" placeholder="Book Aouthor " ngModel name="aouthor" required #aouthor="ngModel" />
+<p class="aouthor-validation-msg" *ngIf="aouthor.invalid&& aouthor.touched" [ngStyle]="{'color':'red'}">Name Cannot be empty </p>
+
+
+<li>Enter book Tag</li> 
+<input style="width: 500px;" type="text" placeholder="Book Tags : History,Math,CS.. " ngModel name="tag" required #tag="ngModel" />
+<p class="tag-validation-msg" *ngIf="tag.invalid&& tag.touched" [ngStyle]="{'color':'red'}">Tag Cannot be empty </p>
+
+
+
+<li>Enter book Quantity</li> 
+<input type="text" placeholder="Book Quantity " ngModel name="quantity" required #quantity="ngModel" />
+<p class="quantity-validation-msg" *ngIf="quantity.invalid&& quantity.touched" [ngStyle]="{'color':'red'}">Quantity Cannot be empty </p>
+
+
+<li>Uploade Image</li> 
+<input  id="upload" type="file"  (change)="uploadimg($event)"  accept="image/*" placeholder="Uploade Image " ngModel name="image" required #image="ngModel" />
+<button type="button" id="btn" ><label for="upload">Upload Image</label></button>
+
+
+
+<button id="add"  [disabled] = "formDetails.invalid"  type="submit" (click)=" openSuccess()"> Add Book</button>
+</form>
