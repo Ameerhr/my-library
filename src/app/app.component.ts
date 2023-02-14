@@ -11,7 +11,7 @@ export class AppComponent {
   title = 'Book';
 
 
-  constructor(public mode:DarkModeService,private toast : NgToastService){}
+  constructor(public mode:DarkModeService){}
 
   toBlack=()=>{
     if(this.mode.turnOn)
@@ -32,7 +32,5 @@ export class AppComponent {
 
 
   }
-  openSuccess(){
-    this.toast.success({detail:'Success',summary:'This is Success', sticky:true,position:'tr'})
-    }
+  
 }

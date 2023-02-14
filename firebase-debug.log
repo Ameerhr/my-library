@@ -1,0 +1,37 @@
+[debug] [2023-02-14T15:02:12.090Z] ----------------------------------------------------------------------
+[debug] [2023-02-14T15:02:12.092Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\abogs\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2023-02-14T15:02:12.093Z] CLI Version:   11.23.0
+[debug] [2023-02-14T15:02:12.093Z] Platform:      win32
+[debug] [2023-02-14T15:02:12.093Z] Node Version:  v18.14.0
+[debug] [2023-02-14T15:02:12.094Z] Time:          Tue Feb 14 2023 17:02:12 GMT+0200 (Israel Standard Time)
+[debug] [2023-02-14T15:02:12.094Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-14T15:02:12.150Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-14T15:02:12.151Z] > authorizing via signed-in user (ameergithub88@gmail.com)
+[debug] [2023-02-14T15:02:12.152Z] > refreshing access token with scopes: []
+[debug] [2023-02-14T15:02:12.154Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-02-14T15:02:12.154Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-14T15:02:23.480Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-02-14T15:02:23.480Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-14T15:02:23.497Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2023-02-14T15:02:24.068Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-02-14T15:02:24.069Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2023-02-14T15:02:39.051Z] TypeError: Cannot read properties of undefined (reading 'value')
+    at ListPrompt.getCurrentValue (C:\Users\abogs\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\inquirer\lib\prompts\list.js:145:53)
+    at C:\Users\abogs\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\map.js:10:37
+    at OperatorSubscriber._this._next (C:\Users\abogs\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\OperatorSubscriber.js:33:21)
+    at Subscriber.next (C:\Users\abogs\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\Subscriber.js:51:18)
+    at C:\Users\abogs\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\take.js:15:32
+    at OperatorSubscriber._this._next (C:\Users\abogs\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\OperatorSubscriber.js:33:21)
+    at Subscriber.next (C:\Users\abogs\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\Subscriber.js:51:18)
+    at Interface.handler (C:\Users\abogs\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\observable\fromEvent.js:59:31)
+    at Interface.emit (node:events:525:35)
+    at Interface.emit (node:domain:489:12)
+    at [_onLine] [as _onLine] (node:internal/readline/interface:422:12)
+    at [_line] [as _line] (node:internal/readline/interface:892:18)
+    at [_ttyWrite] [as _ttyWrite] (node:internal/readline/interface:1270:22)
+    at ReadStream.onkeypress (node:internal/readline/interface:270:20)
+    at ReadStream.emit (node:events:525:35)
+    at ReadStream.emit (node:domain:489:12)
+[error] 
+[error] Error: An unexpected error has occurred.
